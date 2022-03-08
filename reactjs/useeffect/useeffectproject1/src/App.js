@@ -8,6 +8,10 @@ function App() {
 
   useEffect(() => {
     setSecond(new Date().toString());
+
+    return () => {
+      console.log("Return");
+    }
   }, [first, message]);
   
   function changeVal(){

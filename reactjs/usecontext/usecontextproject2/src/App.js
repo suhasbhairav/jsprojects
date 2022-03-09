@@ -8,7 +8,7 @@ function App() {
   const [date, setDate] = useState("");
 
   const changeDate = () => {
-    setDate("AA");
+    setDate(new Date().toTimeString());
   };
 
   return (
@@ -17,7 +17,7 @@ function App() {
         Date: {date}
       </div>
       <button onClick={changeDate}>Change</button>
-      <DateContext.Provider value={{date}}>
+      <DateContext.Provider value={{date, setDate}}>
         <FComponent />
       </DateContext.Provider>
     </div>

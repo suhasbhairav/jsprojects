@@ -26,8 +26,7 @@ function App() {
       <button onClick={decrement}>Decrement</button>
       <CounterContext.Provider value={{counter,setCounter}}>      
         <FComponent/>
-      </CounterContext.Provider>
-    
+      </CounterContext.Provider>    
     </div>
   );
 }

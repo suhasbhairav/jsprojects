@@ -19,6 +19,9 @@ function reducer(state, action) {
 }
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const addContact = (e) => {
     e.preventDefault();
     dispatch({type: "add", payload: {id: Date.now(), name, email}})
@@ -28,9 +31,7 @@ function App() {
 
   };
 
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+
 
   return (
     <div className="App">

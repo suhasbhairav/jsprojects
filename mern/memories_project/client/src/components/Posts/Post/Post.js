@@ -32,8 +32,11 @@ import MoreHoriz from '@material-ui/icons/MoreHoriz';
                 {post.tags.map((tag) => `#${tag} `)}
             </Typography>
         </div>
-        <CardContent>
         <Typography variant="h5" className={classes.title} gutterBottom>
+                {post.title}
+            </Typography>
+        <CardContent>
+        <Typography variant="h5"  gutterBottom>
                 {post.message}
             </Typography>
         </CardContent>

@@ -10,3 +10,4 @@ The repository has the following features.
 - Authentication
 - State Management Frameworks
 - Databases for CRUD or MERN Stack Projects: MongoDB
+- React Concepts - Hooks, State management

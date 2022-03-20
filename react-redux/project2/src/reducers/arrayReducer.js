@@ -1,10 +1,12 @@
+import { ActionTypes } from "../constants";
+
 const arrayReducer = (state = [], action) => {
     switch (action.type) {
-        case 'ADD':
+        case ActionTypes.ADD:
             console.log(action.payload);
             return [...state, action.payload];
     
-        case 'REMOVE':
+        case ActionTypes.REMOVE:
             const num = state.length;
             return state.filter(item => state.indexOf(item) !== num - 1);
 

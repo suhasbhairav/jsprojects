@@ -1,12 +1,14 @@
+import { ActionTypes } from "../constants";
+
 export const addElement = (num) => {
     return {
-        type: "ADD",
+        type: ActionTypes.ADD,
         payload: num
     };
 };
 
 export const removeElement = () => {
     return {
-        type: "REMOVE"
+        type: ActionTypes.REMOVE
     }
 };

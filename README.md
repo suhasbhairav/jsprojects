@@ -4,7 +4,7 @@ The repository consists of projects in JavaScript.
 ## Features
 
 - Practise Projects
-- Trying to cover all concepts
+- JavaScript concepts
 - End-to-End Projects
 - CRUD
 - Authentication

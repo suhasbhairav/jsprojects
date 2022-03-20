@@ -6,3 +6,6 @@ The repository consists of projects in JavaScript.
 - Practise Projects
 - Trying to cover all concepts
 - End-to-End Projects
+- CRUD
+- Authentication
+- State Management Frameworks

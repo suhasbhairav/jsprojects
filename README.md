@@ -1,4 +1,4 @@
-# A Comprehensive Projects/Tutorials in JavaScript, React-Redux, Node.JS, MERN Stack, Express.JS and React-Redux 
+# A Comprehensive Projects/Tutorials in JavaScript, React-Redux, Node.JS, MERN Stack, Express.JS and React-Redux
 The repository has the following features.
 
 ## Features
@@ -9,3 +9,4 @@ The repository has the following features.
 - CRUD
 - Authentication
 - State Management Frameworks
+- Databases for CRUD or MERN Stack Projects: MongoDB

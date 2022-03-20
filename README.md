@@ -5,7 +5,7 @@ The repository has the following features.
 
 - Practise Projects
 - JavaScript concepts
-- End-to-End Projects
+- End-to-End Projects (MERN STACK)
 - CRUD
 - Authentication
 - State Management Frameworks

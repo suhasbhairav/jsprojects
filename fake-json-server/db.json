@@ -56,6 +56,41 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.5952298725612671",
+      "id": 2
+    },
+    {
+      "postId": 1,
+      "body": "0.5334907215908069",
+      "id": 4
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.8395657917912899",
+      "id": 5
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.6796571646499111",
+      "id": 6
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.6286977560514984",
+      "id": 7
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.41835965632864547",
+      "id": 8
+    },
+    {
+      "postId": 1,
+      "body": "New Comment0.7299132786268311",
+      "id": 9
     }
   ],
   "profile": {

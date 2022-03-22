@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "New Book",
+      "author": "Suhas",
+      "id": 2
+    },
+    {
+      "title": "New Book",
+      "author": "Bhairav",
+      "id": 3
+    },
+    {
+      "title": "New Book",
+      "author": "Suhas",
+      "id": 4
+    },
+    {
+      "title": "New Book",
+      "author": "Bhairav",
+      "id": 5
+    },
+    {
+      "title": "New Book",
+      "author": "Suhas",
+      "id": 6
+    },
+    {
+      "title": "New Book",
+      "author": "Suhas",
+      "id": 8
+    },
+    {
+      "title": "New Book",
+      "author": "Suhas",
+      "id": 9
+    },
+    {
+      "title": "New Book",
+      "author": "Bhairav",
+      "id": 11
+    },
+    {
+      "title": "New Book",
+      "author": "Bhairav",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -11,3 +11,5 @@ The repository has the following features.
 - State Management Frameworks
 - Databases for CRUD or MERN Stack Projects: MongoDB
 - React Concepts - Hooks, State management
+- Fake Json Server
+- React Axios

@@ -13,3 +13,4 @@ The repository has the following features.
 - React Concepts - Hooks, State management
 - Fake Json Server
 - React Axios
+- Single Sign On using Google

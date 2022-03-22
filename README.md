@@ -14,3 +14,4 @@ The repository has the following features.
 - Fake Json Server
 - React Axios
 - Single Sign On using Google
+- React Redux

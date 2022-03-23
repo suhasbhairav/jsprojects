@@ -15,3 +15,4 @@ The repository has the following features.
 - React Axios
 - Single Sign On using Google
 - React Redux
+- Google Login (Firebase) in React

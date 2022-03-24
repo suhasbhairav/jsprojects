@@ -16,4 +16,4 @@ The repository has the following features.
 - Single Sign On using Google
 - React Redux
 - Google Login (Firebase) in React
-- Website Clones
+- Website Clones: Food Ordering App

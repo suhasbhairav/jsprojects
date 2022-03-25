@@ -1,50 +1,52 @@
-const express = require("express");
+import express from "express";
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import cors from "cors";
+import dotenv from "dotenv";
+import logger from "morgan";
+import passport from './Auth/index.js';
+import Authentication from "./routes/Auth/index.js";
+import User from "./routes/User/index.js";
+
 const app = express();
 
-const logger = require("morgan");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
+dotenv.config();
+
+app.use(
+  bodyParser.json({
+    limit: "30mb",
+    extended: true,
+  })
+);
+
+app.use(
+  bodyParser.urlencoded({
+    limit: "30mb",
+    extended: true,
+  })
+);
 
 
-const passport = require("./Auth");
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-require("dotenv").config();
-
-
-
-mongoose.connect(process.env.MONNGO_DB_URL, {
-    useNewUrlParser: true
-});
-
-mongoose.set("useFindAndModify", false);
+app.use(logger("dev"));
 
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(session({
-    resave: false,
-    saveUninitialized: false,
-    secret: process.env.MONGO_DB_SECRET,
-    store: new MongoStore({
-        mongooseConnection: mongoose.connection,
-    }),
-}));
-
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({
-    extended: false
-}));
-
-app.use(cors());
-
-const Authentication = require("./routes/Auth");
-const User = require("./routes/User");
-
 app.use("/auth", Authentication);
 app.use("/user", User);
+app.use(cors());
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Server running on port ${port}`));
+
+
+const CONNECTION_URL = process.env.CONNECTION_URL;
+const PORT = process.env.port || 5000;
+
+mongoose
+  .connect(CONNECTION_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() =>
+    app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`))
+  )
+  .catch((error) => console.log(error.message));
+

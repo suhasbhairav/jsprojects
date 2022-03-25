@@ -1,6 +1,6 @@
 import React from 'react'
 import { getExpenses } from './expensesdata'
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 const Expenses = () => {
 
     const expensesData = getExpenses();
@@ -18,6 +18,7 @@ const Expenses = () => {
             </div>
         ))}
         </nav>
+        <Outlet />
     </div>
   )
 }

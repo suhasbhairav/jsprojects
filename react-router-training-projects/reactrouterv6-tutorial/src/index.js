@@ -9,6 +9,7 @@ import Tata from "./Tata";
 import RollsRoyce from "./RollsRoyce";
 import Invoice from "./Invoice";
 import Expense from "./Expense";
+import NoMatch from "./NoMatch";
 
 ReactDOM.render(
   <Router>
@@ -16,6 +17,11 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path="invoices" element={<Invoices />} >
+        <Route index element={
+          <main style={{ padding: "1rem" }}>
+            <p>Select an invoice</p>
+          </main>
+        } />
         <Route path=":invoiceId" element={<Invoice />}/>
       </Route>
       <Route path="expenses" element={<Expenses />} >
@@ -24,6 +30,7 @@ ReactDOM.render(
       <Route path="/cars" element={<Cars />} />
       <Route path="/tata" element={<Tata />} />
       <Route path="/rollsroyce" element={<RollsRoyce />} />
+      <Route path="*" element={<NoMatch />} />
     </Routes>
   </Router>,
   document.getElementById("root")

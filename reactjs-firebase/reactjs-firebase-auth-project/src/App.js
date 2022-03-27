@@ -7,13 +7,25 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "./firebase-config";
+import {useNavigate} from "react-router-dom";
+
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState([]);
-  const [loggedIn, setLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    let profile = sessionStorage.getItem("profile");
+    
+    if(profile){
+      navigate("/home");
+    }
+
+  }, []);
+  
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -36,20 +48,19 @@ function App() {
     try {
       const user = signInWithEmailAndPassword(auth, loginEmail, loginPassword);
       console.log(user);
-      setLoggedIn(true);
+      navigate("/home");
+      window.sessionStorage.setItem('profile', user);
+      
     } catch (error) {
       console.log(error.message);
     }
   };
 
-  const logout = async () => {
-    await signOut(auth);
-    setLoggedIn(false);
-  };
+  
 
   return (
     <div className="App">
-      {!loggedIn && <div>
+      <div>
         <div>
           <h1>Register</h1>
 
@@ -89,15 +100,8 @@ function App() {
 
           <button onClick={login}>Login</button>
         </div>
-      </div>}
-      <div>
-        {loggedIn && user && user?.email && (
-          <div>
-            <div>{user.email} has logged in</div>
-            <button onClick={logout}>Logout</button>
-          </div>
-        )}
       </div>
+      
     </div>
   );
 }

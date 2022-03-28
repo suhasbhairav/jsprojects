@@ -18,3 +18,4 @@ The repository has the following features.
 - Google Login (Firebase) in React
 - Website Clones: Food Ordering App
 - React Router - Basics and Advanced
+- Node.JS - JWT Auth

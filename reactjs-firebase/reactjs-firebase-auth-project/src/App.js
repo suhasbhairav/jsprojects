@@ -56,7 +56,7 @@ function App() {
     }
   };
 
-  
+
 
   return (
     <div className="App">
@@ -99,9 +99,8 @@ function App() {
           />
 
           <button onClick={login}>Login</button>
-        </div>
-      </div>
-      
+        </div>        
+      </div>      
     </div>
   );
 }

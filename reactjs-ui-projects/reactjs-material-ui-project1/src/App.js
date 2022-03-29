@@ -1,8 +1,10 @@
-import { AppBar, Box, IconButton, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, IconButton, Button, Toolbar, Typography, Grid, Card, CardContent } from "@mui/material";
 import "./App.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import AgricultureIcon from '@mui/icons-material/Agriculture';
 import AspectRatioIcon from '@mui/icons-material/AspectRatio';
+import PersonIcon from '@mui/icons-material/Person';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import PersonPinIcon from '@mui/icons-material/PersonPin';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 function App() {
   return (
@@ -25,6 +27,70 @@ function App() {
         </Toolbar>
       </AppBar>
     </Box>
+    <div className="card-analytics">
+      <Grid container spacing={1}>
+        <Grid item xs={3} sm={3}>
+          <Card>
+            <CardContent>
+              <Typography>
+                Customers
+              </Typography>
+              <Typography>
+                <PersonIcon />
+              </Typography>
+              <Typography>
+                100
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={3} sm={3}>
+          <Card>
+            <CardContent>
+              <Typography>
+                Revenue
+              </Typography>
+              <Typography>
+                <AttachMoneyIcon />
+              </Typography>
+              <Typography>
+                $ 100,000
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={3} sm={3}>
+          <Card>
+            <CardContent>
+              <Typography>
+                Suppliers
+              </Typography>
+              <Typography>
+                <PersonPinIcon />
+              </Typography>
+              <Typography>
+                125
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={3} sm={3}>
+          <Card>
+            <CardContent>
+              <Typography>
+                Trucks
+              </Typography>
+              <Typography>
+                <LocalShippingIcon />
+              </Typography>
+              <Typography>
+                500
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+    </div>
     </div>
   );
 }

@@ -26,3 +26,4 @@ The repository has the following features.
 - Fully functional dashboard with Login
 - Fully Functional E-Commerce Shop with Login and Payment Gateway
 - Stripe Checkout in React
+- Social Media App with Login

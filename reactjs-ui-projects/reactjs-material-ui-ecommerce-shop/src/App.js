@@ -13,7 +13,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import { Grid } from '@mui/material';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function App() {
   return (
     <div>
@@ -31,6 +31,8 @@ function App() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             E-Commerce Shop
           </Typography>
+          <Button color="inherit">
+            <ShoppingCartIcon />Shopping Cart</Button>
         </Toolbar>
       </AppBar>
     </Box>

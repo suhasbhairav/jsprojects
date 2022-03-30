@@ -9,3 +9,19 @@
 .analytics-table{
   padding-top: 2%;
 }
+
+.form-controls{
+  padding-top: 2%;
+}
+
+.form-control-field{
+  margin: 0.5%;
+}
+
+.form-control-field-actions{
+  margin-left: 1%;
+}
+
+.submit-buttons{
+  margin: 1%;
+}

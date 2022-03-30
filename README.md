@@ -20,3 +20,9 @@ The repository has the following features.
 - React Router - Basics and Advanced
 - Node.JS - JWT Auth
 - Material UI Templates - Dashboard, E-Commerce
+
+
+## Future Features
+- Fully functional dashboard with Login
+- Fully Functional E-Commerce Shop with Login and Payment Gateway
+- Stripe Checkout in React

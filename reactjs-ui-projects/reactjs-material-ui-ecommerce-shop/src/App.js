@@ -48,7 +48,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -70,7 +70,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -92,7 +92,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -114,7 +114,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -138,7 +138,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -160,7 +160,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -182,7 +182,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -204,7 +204,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -228,7 +228,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -250,7 +250,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -272,7 +272,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -294,7 +294,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -318,7 +318,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -340,7 +340,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -362,7 +362,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.
@@ -384,7 +384,7 @@ function App() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Sports Shoes
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Branded shoes with amazing comfort. This is a top-seller in its category.

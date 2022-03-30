@@ -19,7 +19,7 @@ The repository has the following features.
 - Website Clones: Food Ordering App
 - React Router - Basics and Advanced
 - Node.JS - JWT Auth
-- Material UI Templates - Dashboard, E-Commerce
+- Material UI Templates - Dashboard, E-Commerce Shop
 
 
 ## Future Features

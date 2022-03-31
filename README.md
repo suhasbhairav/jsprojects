@@ -27,3 +27,4 @@ The repository has the following features.
 - Fully Functional E-Commerce Shop with Login and Payment Gateway
 - Stripe Checkout in React
 - Social Media App with Login
+- All applications to have MongoDB as Database

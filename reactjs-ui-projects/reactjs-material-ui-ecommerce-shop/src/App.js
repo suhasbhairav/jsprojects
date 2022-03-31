@@ -38,7 +38,7 @@ function App() {
     </Box>
     <div >
     <Grid className="shop-items" container spacing={2}>
-    <Grid item xs={12} lg={3}>      
+    <Grid item xs={12} md={6} lg={3}>      
       <Card>
       <CardMedia
         component="img"
@@ -60,7 +60,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -82,7 +82,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -104,7 +104,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -128,7 +128,7 @@ function App() {
       </Grid>
     </Grid>
     <Grid className="shop-items" container spacing={2}>
-    <Grid item xs={12} lg={3}>      
+    <Grid item xs={12} md={6} lg={3}>      
       <Card>
       <CardMedia
         component="img"
@@ -150,7 +150,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -172,7 +172,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -194,7 +194,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -218,7 +218,7 @@ function App() {
       </Grid>
     </Grid>
     <Grid className="shop-items" container spacing={2}>
-    <Grid item xs={12} lg={3}>      
+    <Grid item xs={12} md={6} lg={3}>      
       <Card>
       <CardMedia
         component="img"
@@ -240,7 +240,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -262,7 +262,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -284,7 +284,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -308,7 +308,7 @@ function App() {
       </Grid>
     </Grid>
     <Grid className="shop-items" container spacing={2}>
-    <Grid item xs={12} lg={3}>      
+    <Grid item xs={12} md={6} lg={3}>      
       <Card>
       <CardMedia
         component="img"
@@ -330,7 +330,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -352,7 +352,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"
@@ -374,7 +374,7 @@ function App() {
       </CardActions>
     </Card>
       </Grid>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={6} lg={3}>
       <Card>
       <CardMedia
         component="img"

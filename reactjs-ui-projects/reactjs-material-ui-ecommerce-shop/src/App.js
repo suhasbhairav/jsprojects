@@ -36,8 +36,8 @@ function App() {
         </Toolbar>
       </AppBar>
     </Box>
-    <div className='shop-items'>
-    <Grid container spacing={2}>
+    <div >
+    <Grid className="shop-items" container spacing={2}>
     <Grid item xs={3}>      
       <Card>
       <CardMedia

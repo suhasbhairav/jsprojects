@@ -28,3 +28,4 @@ The repository has the following features.
 - Stripe Checkout in React
 - Social Media App with Login
 - All applications to have MongoDB as Database
+- A Text Editor in React JS (Similar to Google Docs)

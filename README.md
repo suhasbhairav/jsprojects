@@ -29,3 +29,4 @@ The repository has the following features.
 - Social Media App with Login
 - All applications to have MongoDB as Database
 - A Text Editor in React JS (Similar to Google Docs)
+- Authentication Frameworks : Keycloak, Okta

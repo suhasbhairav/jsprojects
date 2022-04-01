@@ -3,7 +3,6 @@ The repository has the following features.
 
 ## Features
 
-- Practise Projects
 - JavaScript concepts
 - End-to-End Projects (MERN STACK)
 - CRUD

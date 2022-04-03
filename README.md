@@ -22,6 +22,7 @@ The repository has the following features.
 
 
 ## Future Features
+- Different CSS Frameworks UI Templates - Bootstrap, Material UI
 - Fully functional dashboard with Login
 - Fully Functional E-Commerce Shop with Login and Payment Gateway
 - Stripe Checkout in React

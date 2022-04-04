@@ -31,3 +31,4 @@ The repository has the following features.
 - A Text Editor in React JS (Similar to Google Docs)
 - Authentication Frameworks : Keycloak, Okta
 - React Native Projects
+- Next.JS Projects

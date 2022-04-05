@@ -32,3 +32,4 @@ The repository has the following features.
 - Authentication Frameworks : Keycloak, Okta
 - React Native Projects
 - Next.JS Projects
+- React Frontend/CMS Backend Projects

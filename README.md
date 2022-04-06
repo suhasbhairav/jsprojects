@@ -33,3 +33,4 @@ The repository has the following features.
 - React Native Projects
 - Next.JS Projects
 - React Frontend/CMS Backend Projects
+- UI Templates

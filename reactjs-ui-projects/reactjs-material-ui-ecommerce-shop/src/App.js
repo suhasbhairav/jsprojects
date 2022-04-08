@@ -13,28 +13,11 @@ import CardMedia from '@mui/material/CardMedia';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import { Grid } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Label } from '@mui/icons-material';
 function App() {
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
-      <AppBar color="success" position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            sx={{ mr: 2 }}
-          >
-            <AccountTreeIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            E-Commerce Shop
-          </Typography>
-          <Button color="inherit">
-            <ShoppingCartIcon />Shopping Cart</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+      
     <div >
     <Grid className="shop-items" container spacing={2}>
     <Grid item xs={12} md={6} lg={3}>      
@@ -56,6 +39,9 @@ function App() {
       <CardActions>
         <Button size="small">View</Button>
         <Button size="small">Add to Cart</Button>
+        <Typography color="text.secondary">
+          $19.99
+        </Typography>
       </CardActions>
     </Card>
       </Grid>

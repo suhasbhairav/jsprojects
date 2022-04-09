@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import flightRoutes from "./routes/flights.js";
+import airports from './routes/airports.js';
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use(
 
 app.use(cors());
 app.use("/flights", flightRoutes);
+app.use("/airports", airports);
 
 app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));

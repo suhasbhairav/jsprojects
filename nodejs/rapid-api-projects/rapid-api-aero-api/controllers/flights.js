@@ -38,4 +38,24 @@ export const getFlightDepartures = async (req, res) => {
     } catch (error) {
         console.log(error.message);
     }
-}
+};
+
+export const getFlightDelayStats = async (req, res) => {
+    const HOST = process.env.RAPID_API_HOST;
+    const KEY = process.env.RAPID_API_KEY;
+    try {
+        const options = {
+            method: 'GET',
+            url: 'https://' + HOST + '/flights/KL1395/delays',
+            headers: {
+                'X-RapidAPI-Host': HOST,
+                'X-RapidAPI-Key': KEY
+            }
+        };
+
+        let response = await axios(options);
+        res.status(200).json(response.data);
+    } catch (error) {
+        console.log(error.message);
+    }  
+};

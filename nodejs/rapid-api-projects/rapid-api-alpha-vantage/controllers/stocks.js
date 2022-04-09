@@ -134,7 +134,7 @@ export const getTSMonthlyAdjusted = async (req, res) => {
   try {
     const options = {
       method: "GET",
-      url: "https://"+HOST+"/query",
+      url: "https://" + HOST + "/query",
       params: {
         symbol: "MSFT",
         function: "TIME_SERIES_MONTHLY_ADJUSTED",
@@ -150,5 +150,30 @@ export const getTSMonthlyAdjusted = async (req, res) => {
     res.status(200).json(response.data);
   } catch (error) {
     console.log(error.message);
+  }
+};
+
+export const getTSMonthly = async (req, res) => {
+  const HOST = process.env.RAPID_API_HOST;
+  const KEY = process.env.RAPID_API_KEY;
+  try {
+    const options = {
+      method: "GET",
+      url: "https://"+HOST+"/query",
+      params: {
+        symbol: "MSFT",
+        function: "TIME_SERIES_MONTHLY",
+        datatype: "json",
+      },
+      headers: {
+        "X-RapidAPI-Host": HOST,
+        "X-RapidAPI-Key": KEY,
+      },
+    };
+
+    let response = await axios(options);
+    res.status(200).json(response.data);
+  } catch (error) {
+      console.log(error.message);
   }
 };

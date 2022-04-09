@@ -19,7 +19,7 @@ The repository has the following features.
 - React Router - Basics and Advanced
 - Node.JS - JWT Auth
 - Material UI Templates - Dashboard, E-Commerce Shop
-- Rapid API & Node JS - Aero Flight API
+- Rapid API & Node JS - Aero Flight API, Alpha Vantage API
 
 
 ## Future Features

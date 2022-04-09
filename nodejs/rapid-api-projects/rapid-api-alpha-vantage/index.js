@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import stocks from './routes/stocks.js';
 
 const app = express();
 
@@ -21,5 +22,7 @@ app.use(
 );
 
 app.use(cors());
+
+app.use('/stocks', stocks);
 
 app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));

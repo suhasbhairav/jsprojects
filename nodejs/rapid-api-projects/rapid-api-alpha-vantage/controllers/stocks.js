@@ -313,4 +313,25 @@ export const getCryptoMonthly = async (req, res) => {
         console.log(error.message);
         res.status(400).json(error.message);
     }
+};  
+
+export const getCryptoWeekly =  async (req, res) => {
+    const HOST = process.env.RAPID_API_HOST;
+    const KEY = process.env.RAPID_API_KEY;
+    try {
+        const options = {
+            method: 'GET',
+            url: 'https://alpha-vantage.p.rapidapi.com/query',
+            params: {symbol: 'BTC', function: 'DIGITAL_CURRENCY_WEEKLY', market: 'CNY'},
+            headers: {
+              'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com',
+              'X-RapidAPI-Key': '768a7a35f5mshbe332da2ffe63acp19162djsn465cb64e6088'
+            }
+          };
+          let response = await axios(options);
+          res.status(200).json(response.data);
+    } catch (error) {
+        console.log(error.message);
+        res.status(400).json(error.message);
+    }
 };

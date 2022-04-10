@@ -321,11 +321,11 @@ export const getCryptoWeekly =  async (req, res) => {
     try {
         const options = {
             method: 'GET',
-            url: 'https://alpha-vantage.p.rapidapi.com/query',
+            url: 'https://'+ HOST +'/query',
             params: {symbol: 'BTC', function: 'DIGITAL_CURRENCY_WEEKLY', market: 'CNY'},
             headers: {
-              'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com',
-              'X-RapidAPI-Key': '768a7a35f5mshbe332da2ffe63acp19162djsn465cb64e6088'
+              'X-RapidAPI-Host': HOST,
+              'X-RapidAPI-Key': KEY
             }
           };
           let response = await axios(options);

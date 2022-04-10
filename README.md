@@ -19,7 +19,7 @@ The repository has the following features.
 - React Router - Basics and Advanced
 - Node.JS - JWT Auth
 - Material UI Templates - Dashboard, E-Commerce Shop
-- Rapid API & Node JS - Aero Flight API, Alpha Vantage API, NSE Data API
+- Rapid API (https://rapidapi.com/collection/list-of-free-apis ; https://rapidapi.com) & Node JS - Aero Flight API, Alpha Vantage API, NSE Data API
 
 
 ## Future Features
@@ -29,7 +29,7 @@ The repository has the following features.
 - Stripe Checkout in React
 - Social Media App with Login
 - All applications to have MongoDB as Database
-- React JS apps with Rapid APIs as API Source: https://rapidapi.com/collection/list-of-free-apis ; https://rapidapi.com
+- React JS apps with Rapid APIs as API Source
 - React JS Apps that use Node.JS API Projects (Rapid API apps)
 - A Text Editor in React JS (Similar to Google Docs)
 - Authentication Frameworks : Keycloak, Okta

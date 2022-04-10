@@ -200,17 +200,17 @@ export const getFXMonthly = async (req, res) => {
     let response = await axios(options);
     res.status(200).json(response.data);
   } catch (error) {
-      console.log(error.message);
+    console.log(error.message);
   }
 };
 
 export const getFXWeekly = async (req, res) => {
-    const HOST = process.env.RAPID_API_HOST;
-    const KEY = process.env.RAPID_API_KEY;
+  const HOST = process.env.RAPID_API_HOST;
+  const KEY = process.env.RAPID_API_KEY;
   try {
     const options = {
       method: "GET",
-      url: "https://"+ HOST +"/query",
+      url: "https://" + HOST + "/query",
       params: {
         to_symbol: "USD",
         from_symbol: "EUR",
@@ -226,6 +226,6 @@ export const getFXWeekly = async (req, res) => {
     let response = await axios(options);
     res.status(200).json(response.data);
   } catch (error) {
-      console.log(error.message);
+    console.log(error.message);
   }
 };

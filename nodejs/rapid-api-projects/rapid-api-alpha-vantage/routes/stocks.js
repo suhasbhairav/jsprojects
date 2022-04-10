@@ -10,7 +10,8 @@ import {
   getFXMonthly,
   getFXWeekly,
   getFXDaily,
-  getCurrencyExchangeRate
+  getCurrencyExchangeRate,
+  getCryptoMonthly
 } from "../controllers/stocks.js";
 const router = express.Router();
 
@@ -25,5 +26,6 @@ router.get("/fxMonthly", getFXMonthly);
 router.get("/fxWeekly", getFXWeekly);
 router.get("/fxDaily", getFXDaily);
 router.get("/curExRate", getCurrencyExchangeRate);
+router.get("/cryptoMonthly", getCryptoMonthly);
 
 export default router;

@@ -235,6 +235,7 @@ export const getFXWeekly = async (req, res) => {
     res.status(200).json(response.data);
   } catch (error) {
     console.log(error.message);
+    res.status(400).json(error.message);
   }
 };
 

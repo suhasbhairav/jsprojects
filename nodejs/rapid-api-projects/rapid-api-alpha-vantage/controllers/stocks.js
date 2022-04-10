@@ -199,7 +199,9 @@ export const getFXMonthly = async (req, res) => {
 
     let response = await axios(options);
     res.status(200).json(response.data);
-  } catch (error) {}
+  } catch (error) {
+      console.log(error.message);
+  }
 };
 
 export const getFXWeekly = async (req, res) => {

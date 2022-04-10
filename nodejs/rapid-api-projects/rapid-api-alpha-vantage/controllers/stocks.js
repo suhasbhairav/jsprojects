@@ -384,4 +384,33 @@ export const getCryptoCurExchangeRate = async (req, res) => {
         console.log(error.message);
         res.status(400).json(error.message);
     }    
-}
+};
+
+export const getTechIndicators = async (req, res) => {
+    const HOST = process.env.RAPID_API_HOST;
+    const KEY = process.env.RAPID_API_KEY;
+    try {
+        const options = {
+            method: 'GET',
+            url: 'https://' + HOST + '/query',
+            params: {
+              symbol: 'MSFT',
+              function: 'SMA',
+              series_type: 'close',
+              interval: '5min',
+              time_period: '60',
+              datatype: 'json'
+            },
+            headers: {
+              'X-RapidAPI-Host': HOST,
+              'X-RapidAPI-Key': KEY
+            }
+          };
+
+          let response = await axios(options);
+          res.status(200).json(response.data);
+    } catch (error) {
+        console.log(error.message);
+        res.status(400).json(error.message);
+    }
+};

@@ -8,7 +8,8 @@ import {
   getTSMonthlyAdjusted,
   getTSMonthly,
   getFXMonthly,
-  getFXWeekly
+  getFXWeekly,
+  getFXDaily
 } from "../controllers/stocks.js";
 const router = express.Router();
 
@@ -21,5 +22,6 @@ router.get("/tsMonthlyAdjusted", getTSMonthlyAdjusted);
 router.get("/tsMonthly", getTSMonthly);
 router.get("/fxMonthly", getFXMonthly);
 router.get("/fxWeekly", getFXWeekly);
+router.get("/fxDaily", getFXDaily);
 
 export default router;

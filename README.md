@@ -20,6 +20,7 @@ The repository has the following features.
 - Node.JS - JWT Auth
 - Material UI Templates - Dashboard, E-Commerce Shop
 - Rapid API (https://rapidapi.com/collection/list-of-free-apis ; https://rapidapi.com) & Node JS - Aero Flight API, Alpha Vantage API, NSE Data API
+- React JS & Rapid API Projects (Alpha Vantage API)
 
 
 ## Future Features

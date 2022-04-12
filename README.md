@@ -13,7 +13,7 @@ The repository has the following features.
 - Fake Json Server
 - React Axios
 - Single Sign On using Google
-- React Redux
+- React Redux, React Hooks
 - Google Login (Firebase) in React
 - Website Clones: Food Ordering App
 - React Router - Basics and Advanced

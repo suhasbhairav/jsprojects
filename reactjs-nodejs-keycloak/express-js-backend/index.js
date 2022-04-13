@@ -1,31 +1,27 @@
-import session from "express-session";
-import Keycloak from "keycloak-connect";
-import chalk from "chalk";
+import express from 'express';
+import initKeycloak from './keycloak-config.js';
 
-let keycloak = null;
-var keycloakConfig = {
-    "realm": "",
-    "auth-server-url": "",
-    "ssl-required": "",
-    "resource": "",
-    "realmPublicKey": "",
-    "bearer-only": true
-};
+var router = express.Router();
+var app = express();
 
-function initKeycloak(){
-    if(keycloak){
-        console.log("Returning existing Keycloak instance");
-        return keycloak;
-    }else{
-        console.log("Initializing Keycloak...");
-        var memoryStore = new session.MemoryStore();
-        keycloak = new Keycloak({
-            store: memoryStore,
-            secret: 'any_key',
-            resave: false,
-            saveUninitialized: true
-        }, keycloakConfig);
-    }
-};
+const keycloak = initKeycloak();
 
-export default initKeycloak;
+app.use(keycloak.middleware());
+
+router.get('/', keycloak.protect('user'), function(req, res){
+    res.send('Hello User');
+});
+
+router.get('/admin', keycloak.protect('admin'), function(req, res){
+    req.send('Hello Admin');
+});
+
+router.get('/all', keycloak.protect(['user', 'admin']), function(req, res){
+    res.send('Hello All');
+});
+
+app.get('/', function(req, res){
+    res.send('Server is up');
+});
+
+app.listen(5000);

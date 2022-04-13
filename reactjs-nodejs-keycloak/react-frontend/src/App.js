@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import Keycloak from 'keycloak-js';
+
 
 function App() {
+
+  const [keycloak, setKeycloak] = useState(null);
+  const [authenticated, setAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const keycloakObject = Keycloak('/keycloak.json');
+    
+    keycloakObject.init({
+      onLoad: 'login-required'
+    }).then(authenticatedValue => {
+      setKeycloak(keycloakObject);
+      setAuthenticated(authenticatedValue);
+      if(authenticatedValue){
+        window.accessToken = keycloakObject.token;
+      }
+    });
+  
+    
+  }, []);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {keycloak && authenticated && <div>
+          <div>
+            This is a keycloak-secured page
+          </div>
+        </div>}
+        {!keycloak && !authenticated && <div>
+            Unable to authenticate
+          </div>}
     </div>
   );
 }

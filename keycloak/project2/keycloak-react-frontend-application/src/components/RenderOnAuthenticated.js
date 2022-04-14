@@ -1,9 +1,5 @@
-import React from 'react'
+import UserService from "../../../react-frontend/src/services/UserService";
 
-const RenderOnAuthenticated = () => {
-  return (
-    <div>RenderOnAuthenticated</div>
-  )
-}
+const RenderOnAuthenticated = ({children}) => (UserService.isLoggedIn()) ? children : null;
 
-export default RenderOnAuthenticated
+export default RenderOnAuthenticated;

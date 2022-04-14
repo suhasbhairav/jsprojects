@@ -20,3 +20,23 @@ const doLogin = _kc.Login;
 const doLogout = _kc.Logout;
 const getToken = () => _kc.token;
 const isLoggedIn = () => !!_kc.token;
+const updateToken = (successCallback) =>
+  _kc.updateToken(5)
+    .then(successCallback)
+    .catch(doLogin);
+const getUsername = () => _kc.tokenParsed?._preferred_username;
+const hasRole = (roles) => roles.some((role) => _kc.hasRealmRole(role));
+
+const UserService = {
+    initKeycloak,
+    doLogin,
+    doLogout,
+    isLoggedIn,
+    getToken,
+    updateToken,
+    getUsername,
+    hasRole,
+};
+
+
+export default UserService;

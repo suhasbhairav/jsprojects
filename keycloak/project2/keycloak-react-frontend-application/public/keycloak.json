@@ -1,0 +1,8 @@
+{
+    "realm": "KEYCLOAK-REACT-FRONTEND-APP",
+    "auth-server-url": "http://localhost:8180/auth/",
+    "ssl-required": "external",
+    "resource": "react-frontend-app",
+    "public-client": true,
+    "confidential-port": 0
+  }

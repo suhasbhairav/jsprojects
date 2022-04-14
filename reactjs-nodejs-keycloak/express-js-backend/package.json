@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
     "express-session": "^1.17.2",
     "keycloak-connect": "^17.0.1",
     "nodemon": "^2.0.15"

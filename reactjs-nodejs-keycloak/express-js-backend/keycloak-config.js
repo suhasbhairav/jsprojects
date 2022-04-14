@@ -1,15 +1,16 @@
-import session from "express-session";
-import Keycloak from "keycloak-connect";
-import chalk from "chalk";
+var session = require("express-session");
+var Keycloak = require("keycloak-connect")
 
-let keycloak = null;
-var keycloakConfig = {
-    "realm": "",
-    "auth-server-url": "",
-    "ssl-required": "",
-    "resource": "",
-    "realmPublicKey": "",
-    "bearer-only": true
+let keycloak;
+var keycloakConfig = {    
+    "realm": "Demo-Realm",
+    "auth-server-url": "http://localhost:8180/auth/",
+    "ssl-required": "external",
+    "resource": "node-microservice",
+    "public-client": true,
+    "verify-token-audience": true,
+    "use-resource-role-mappings": true,
+    "confidential-port": 0      
 };
 
 function initKeycloak(){
@@ -25,7 +26,10 @@ function initKeycloak(){
             resave: false,
             saveUninitialized: true
         }, keycloakConfig);
+        return keycloak;
     }
 };
 
-export default initKeycloak;
+module.exports = {
+    initKeycloak
+};

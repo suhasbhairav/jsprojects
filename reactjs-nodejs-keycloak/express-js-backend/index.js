@@ -1,11 +1,8 @@
-import express from 'express';
-import initKeycloak from './keycloak-config.js';
-
+var express = require("express");
 var router = express.Router();
 var app = express();
 
-const keycloak = initKeycloak();
-
+const keycloak = require("./keycloak-config.js").initKeycloak();
 app.use(keycloak.middleware());
 
 router.get('/', keycloak.protect('user'), function(req, res){

@@ -1,29 +1,25 @@
 import './App.css';
-import {BrowserRouter as Router} from 'react-redux-dom';
-import StoreService from '../../../react-frontend/src/services/StoreService';
+import {BrowserRouter} from 'react-router-dom';
+import StoreService from '../services/StoreService';
 import RenderOnAnonymous from './RenderOnAnonymous';
-import RenderOnAuthenticated from './RenderOnAuthenticated';
 import { Provider } from 'react-redux';
-import Menu from '../../../react-frontend/src/components/Menu';
-import ProtectedComponents from './ProtectedComponents';
+import MenuComponent from './MenuComponent';
 
 const store = StoreService.setup();
 
-function App() {
-  return (
+const App = () => (
     <Provider store={store}>
-      <Router>
+      <BrowserRouter>
         <div className='container'>
           <RenderOnAnonymous>
-            <Menu />
+            <MenuComponent />
           </RenderOnAnonymous>
-          <RenderOnAuthenticated>
+          {/*<RenderOnAuthenticated>
             <ProtectedComponents />
-          </RenderOnAuthenticated>
+          </RenderOnAuthenticated>*/}
         </div>
-      </Router>
+      </BrowserRouter>
     </Provider>
   );
-}
 
 export default App;

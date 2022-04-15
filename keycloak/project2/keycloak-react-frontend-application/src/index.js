@@ -1,12 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import HttpService from '../../react-frontend/src/services/HttpService';
-import UserService from '../../react-frontend/src/services/UserService';
+import ReactDOM from 'react-dom';
+import HttpService from './services/HttpService';
+import UserService from './services/UserService';
+import App from './components/App';
 
-const renderApp = () => ReactDOM.createRoot(document.getElementById('root'));
-
+const renderApp = () => ReactDOM.render(<App />, document.getElementById("app"));
 
 UserService.initKeycloak(renderApp);
 HttpService.configure();

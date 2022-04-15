@@ -1,4 +1,4 @@
-import UserService from "../../../react-frontend/src/services/UserService";
+import UserService from "./services/UserService";
 
 const RenderOnAuthenticated = ({children}) => (UserService.isLoggedIn()) ? children : null;
 

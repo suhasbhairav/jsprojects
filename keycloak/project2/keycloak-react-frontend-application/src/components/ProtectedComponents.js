@@ -9,9 +9,8 @@ import JustList from './JustList'
 const ProtectedComponents = () => {
   return (
     <>
-      <MenuComponent />
       <Routes>
-        <Route path="/" exact element={<JustList />} />
+        <Route path="/" exact element={<MenuComponent />} />
         <Route path="/admin" roles={['admin', 'user']} element={<ProtectedComponentAdmin />} />
         <Route path="/user" roles={['user']} element={<ProtectedComponentUser />} />
       </Routes>

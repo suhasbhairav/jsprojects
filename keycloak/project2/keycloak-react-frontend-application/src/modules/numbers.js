@@ -1,6 +1,5 @@
-import {SUCCESS_SUFFIX} from 'redux-axios-middleware';
-import HttpService from '../../../react-frontend/src/services/HttpService';
-import UserService from '../../../react-frontend/src/services/UserService';
+import React from "react";
+
 
 const LIST_NUMBERS = 'LIST_NUMBERS';
 const ADD_NUMBER = 'ADD_NUMBER';

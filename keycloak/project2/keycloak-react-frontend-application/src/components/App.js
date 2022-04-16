@@ -7,7 +7,9 @@ import MenuComponent from './MenuComponent';
 
 const store = StoreService.setup();
 
-const App = () => (
+
+const App = () => {
+  return(
     <Provider store={store}>
       <BrowserRouter>
         <div className='container'>
@@ -21,5 +23,6 @@ const App = () => (
       </BrowserRouter>
     </Provider>
   );
-
+}
+    
 export default App;

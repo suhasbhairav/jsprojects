@@ -1,28 +1,32 @@
 import React, {useCallback, useEffect} from 'react'
-import {Navigate, useLocation, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import { useKeycloak } from '@react-keycloak/web';
 
 const Login = () => {
-
-    const location = useLocation();
     const navigate = useNavigate();
-    const currentLocationState = location.state || {
-        from: {pathname: '/home'}
-    };
     const {keycloak} = useKeycloak();
 
     useEffect(() => {
+      console.log(JSON.stringify(keycloak));
       if(keycloak?.authenticated){
-          navigate('/home');      }
-    }, [keycloak]);
+        //navigate('/home', {replace: true});
+        window.location.href ="/home";
+      }
+    }, []);
     
-
+  
+   useEffect(() => {     
+     if(keycloak?.authenticated){
+       //navigate('/home', {replace: true});
+       window.location.href ="/home";
+     }
+   }, [keycloak]);
+   
     const login = useCallback(() => {
         keycloak?.login()
+        console.log(keycloak);
     }, [keycloak]);
-
-    //if(keycloak?.authenticated) return <Navigate to={currentLocationState?.from} />
-
+   
   return (
     <div>
         <button type="button" onClick={login}>

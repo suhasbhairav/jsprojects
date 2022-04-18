@@ -34,7 +34,7 @@ The repository has the following features.
 - All applications to have MongoDB as Database
 - React JS apps with Rapid APIs as API Source
 - A Text Editor in React JS (Similar to Google Docs)
-- Authentication Frameworks : Keycloak, Okta
+- Authentication Frameworks : Okta
 - React Native Projects
 - Next.JS Projects
 - React Frontend/CMS Backend (Strapi) Projects

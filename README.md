@@ -10,6 +10,7 @@ This repository contains projects written from scratch. We look at different con
 - State Management Frameworks
 - Databases for CRUD or MERN Stack Projects: MongoDB
 - React Concepts - Hooks, State management
+- Thunk
 - Fake Json Server
 - React Axios
 - Single Sign On using Google

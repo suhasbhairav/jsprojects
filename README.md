@@ -1,5 +1,5 @@
 # A Comprehensive Projects/Tutorials in JavaScript, React-Redux, Node.JS, MERN Stack, Express.JS and React-Redux
-The repository has the following features.
+This repository contains projects written from scratch. We look at different concepts and features in JavaScript, Node.JS, React JS, React Redux, Thunk, etc.
 
 ## Features
 

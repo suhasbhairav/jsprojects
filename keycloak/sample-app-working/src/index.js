@@ -6,4 +6,4 @@ import UserService from "./services/UserService";
 const renderApp = () => ReactDOM.render(<App/>, document.getElementById("app"));
 
 UserService.initKeycloak(renderApp);
-//HttpService.configure();
+HttpService.configure();

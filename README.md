@@ -22,6 +22,7 @@ The repository has the following features.
 - Rapid API (https://rapidapi.com/collection/list-of-free-apis ; https://rapidapi.com) & Node JS - Aero Flight API, Alpha Vantage API, NSE Data API
 - React JS & Rapid API Projects (Alpha Vantage API)
 - React JS, Express JS & Keycloak Login
+- React JS, Keycloak and Social Login
 
 
 ## Future Features

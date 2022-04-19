@@ -15,7 +15,7 @@ This repository contains projects written from scratch. We look at different con
 - React Axios
 - Single Sign On using Google
 - React Redux, React Hooks
-- Google Login (Firebase) in React
+- Google Firebase Login in React
 - Website Clones: Food Ordering App
 - React Router - Basics and Advanced
 - Node.JS - JWT Auth

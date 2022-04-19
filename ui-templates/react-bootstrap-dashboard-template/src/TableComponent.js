@@ -1,188 +1,39 @@
 import React from 'react'
-import 'datatables.net-dt/css/jquery.dataTables.css'
-import 'datatables.net-bs/css/dataTables.bootstrap.css'
+import { Table } from 'react-bootstrap'
 
-const $ = require('jquery');
-$.DataTable = require("datatables.net");
 
 const TableComponent = () => {
   return (
     <>
-        <table class="display compact" id="" border=".5" bordercolor="#000099" cellspacing="0" cellpadding="0" width="100%">
-    <thead>
-    <tr BGCOLOR="#E0EEE0">
-        <th>SorValue</th>
-        <th>StatusCode</th>
-        <th>ValidForPINChange</th>
-        <th>ValidForCardActivation</th>
-        <th>ValidForCreditCardRewardsProgram</th>
-        <th>ValidForCustAccess</th>
-        <th>ValidForAuthentication</th>
-    </tr>
-    </thead>
+        <Table striped bordered hover>
+  <thead>
     <tr>
-        <td class="TableCell">1</td>
-        <td class="TableCell">ACTIVE</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
     </tr>
     <tr>
-        <td class="TableCell">2</td>
-        <td class="TableCell">NOT_ACTIVATED</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
     </tr>
     <tr>
-        <td class="TableCell">3</td>
-        <td class="TableCell">IN_CONVERSION</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
+      <td>3</td>
+      <td colSpan={2}>Larry the Bird</td>
+      <td>@twitter</td>
     </tr>
-    <tr>
-        <td class="TableCell">5</td>
-        <td class="TableCell">CLOSED_MISUSED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">6</td>
-        <td class="TableCell">LOST</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">7</td>
-        <td class="TableCell">STOLEN</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">9</td>
-        <td class="TableCell">CLOSED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">01</td>
-        <td class="TableCell">ACTIVE</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">02</td>
-        <td class="TableCell">NOT_ACTIVATED</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">03</td>
-        <td class="TableCell">IN_CONVERSION</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">05</td>
-        <td class="TableCell">CLOSED_MISUSED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">06</td>
-        <td class="TableCell">LOST</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">07</td>
-        <td class="TableCell">STOLEN</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">09</td>
-        <td class="TableCell">CLOSED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">A</td>
-        <td class="TableCell">AUTHORIZATION_PROHIBITED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">D</td>
-        <td class="TableCell">CLOSED_NOT_ISSUED</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">U</td>
-        <td class="TableCell">CONFIRMED_FRAUD</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">VALID</td>
-    </tr>
-    <tr>
-        <td class="TableCell">*</td>
-        <td class="TableCell">UNKNOWN_CODE</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-        <td class="TableCell">NOT_VALID</td>
-    </tr>
-</table>
+  </tbody>
+</Table>
     </>
   )
 }

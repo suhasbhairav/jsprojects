@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import CarouselComponent from "./CarouselComponent";
+import TableComponent from "./TableComponent";
 
 const DashboardComponent = () => {
   return (
@@ -58,6 +59,9 @@ const DashboardComponent = () => {
             </Card.Body>
           </Card>
         </div>
+      </div>
+      <div class="row mt-2">
+          <TableComponent />
       </div>
     </div>
   );

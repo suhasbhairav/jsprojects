@@ -1,5 +1,12 @@
 import React from "react";
-import { Navbar, Container, Nav, NavLink, NavbarBrand, NavDropdown } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavLink,
+  NavbarBrand,
+  NavDropdown,
+} from "react-bootstrap";
 
 const NavBarComponent = () => {
   return (
@@ -12,11 +19,12 @@ const NavBarComponent = () => {
             <Nav className="me-auto">
               <Nav.Link href="/dashboard">Dashboard</Nav.Link>
               <Nav.Link href="/contactus">Contact Us</Nav.Link>
-              <NavDropdown title="UI Template Design Team" id="basic-nav-dropdown">
+              <NavDropdown
+                title="UI Template Design Team"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Team
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Team</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
                   Who are we
                 </NavDropdown.Item>

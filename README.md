@@ -27,7 +27,7 @@ This repository contains projects written from scratch. We look at different con
 
 
 ## Future Features
-- Different CSS Frameworks UI Templates - Bootstrap, Material UI
+- Different CSS Frameworks UI Templates - Bootstrap, Material UI, Semantic UI React
 - Fully functional dashboard with Login
 - Fully Functional E-Commerce Shop with Login and Payment Gateway
 - Stripe Checkout in React

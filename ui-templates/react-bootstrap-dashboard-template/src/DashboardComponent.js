@@ -5,13 +5,13 @@ import TableComponent from "./TableComponent";
 
 const DashboardComponent = () => {
   return (
-    <div class="container mt-3">
-      <div class="row mt-3">
+    <div className="container mt-3">
+      <div className="row mt-3">
         <CarouselComponent />
       </div>
 
-      <div class="row mt-3">
-        <div class="col-sm">
+      <div className="row mt-3">
+        <div className="col-sm">
           <Card>
             <Card.Img
               variant="top"
@@ -27,7 +27,7 @@ const DashboardComponent = () => {
             </Card.Body>
           </Card>
         </div>
-        <div class="col-sm">
+        <div className="col-sm">
           <Card>
             <Card.Img            
               variant="top"
@@ -43,7 +43,7 @@ const DashboardComponent = () => {
             </Card.Body>
           </Card>
         </div>
-        <div class="col-sm">
+        <div className="col-sm">
           <Card>
             <Card.Img
               variant="top"
@@ -60,9 +60,9 @@ const DashboardComponent = () => {
           </Card>
         </div>
       </div>
-      <div class="row mt-2">
+      <div className="row mt-2">
           <TableComponent />
-      </div>
+      </div>      
     </div>
   );
 };

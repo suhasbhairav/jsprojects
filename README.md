@@ -45,6 +45,7 @@ This repository contains projects written from scratch. We look at different con
 - React Unit Tests
 - React Integration Tests
 - Node.JS Unit Tests
+- Node.JS Integration Tests on Real DB (Mongo DB)
 - Full Stack Content Management System (CMS) app with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
 - Full Stack Order Management App with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
 - Full Stack School Management System with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)

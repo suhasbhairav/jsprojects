@@ -1,11 +1,15 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import CarouselComponent from "./CarouselComponent";
+import ChartsComponent from "./ChartsComponent";
 import TableComponent from "./TableComponent";
 
 const DashboardComponent = () => {
   return (
     <div className="container mt-3">
+        <div className="row mt-3">
+            <ChartsComponent />
+        </div>
       <div className="row mt-3">
         <CarouselComponent />
       </div>

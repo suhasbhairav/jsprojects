@@ -44,3 +44,4 @@ This repository contains projects written from scratch. We look at different con
 - React Redux Saga
 - React Unit Tests
 - Full Stack Content Management System (CMS) app with React JS, Material UI, Node JS and Mongo DB
+- Order Management App with React JS, Material UI, Node JS and Mongo DB

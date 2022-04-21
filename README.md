@@ -45,4 +45,4 @@ This repository contains projects written from scratch. We look at different con
 - React Unit Tests
 - Full Stack Content Management System (CMS) app with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
 - Order Management App with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
-- School Management System with React JS, Material UI, Node JS and Mongo DB
+- School Management System with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)

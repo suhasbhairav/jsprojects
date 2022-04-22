@@ -51,3 +51,4 @@ This repository contains projects written from scratch. We look at different con
 - Full Stack Content Management System (CMS) app with React JS, Material UI, Node JS and Mongo DB (Including Google Sign-In)
 - Full Stack Order Management App with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
 - Full Stack School Management System with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
+- Express JS and Google Firebase authentication

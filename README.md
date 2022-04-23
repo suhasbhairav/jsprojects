@@ -34,7 +34,6 @@ This repository contains projects written from scratch. We look at different con
 - Stripe Checkout in React
 - Social Media App with Login
 - All applications to have MongoDB as Database
-- React JS apps with Rapid APIs as API Source
 - A Text Editor in React JS (Similar to Google Docs)
 - Authentication Frameworks : Okta
 - React Native Projects

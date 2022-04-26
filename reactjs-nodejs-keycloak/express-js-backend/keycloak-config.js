@@ -2,16 +2,16 @@ var session = require("express-session");
 var Keycloak = require("keycloak-connect")
 
 let keycloak;
-var keycloakConfig = {    
+var keycloakConfig = {
     "realm": "Demo-Realm",
+    "bearer-only": true,
     "auth-server-url": "http://localhost:8180/auth/",
     "ssl-required": "external",
-    "resource": "node-microservice",
-    "public-client": true,
+    "resource": "new-node-microservice",
     "verify-token-audience": true,
     "use-resource-role-mappings": true,
-    "confidential-port": 0      
-};
+    "confidential-port": 0
+  };
 
 function initKeycloak(){
     if(keycloak){

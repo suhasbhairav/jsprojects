@@ -37,6 +37,7 @@ This repository contains projects written from scratch. We look at different con
 - A Text Editor in React JS (Similar to Google Docs)
 - Authentication Frameworks : Okta
 - React Native Projects
+- React Native + Google Sign In
 - Next.JS Projects
 - React Frontend/CMS Backend (Strapi) Projects
 - React and Excel

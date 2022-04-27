@@ -14,10 +14,13 @@ function App() {
     keycloakObject.init({
       onLoad: 'login-required'
     }).then(authenticatedValue => {
+      console.log(authenticatedValue);
       setKeycloak(keycloakObject);
       setAuthenticated(authenticatedValue);
       if(authenticatedValue){
         window.accessToken = keycloakObject.token;
+      }else{
+        console.log(keycloakObject);
       }
     });
   

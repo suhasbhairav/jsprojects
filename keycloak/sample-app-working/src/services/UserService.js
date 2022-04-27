@@ -9,11 +9,13 @@ const _kc = new Keycloak('/keycloak.json');
  */
 const initKeycloak = (onAuthenticatedCallback) => {
   _kc.init({
-    onLoad: 'check-sso',
-    silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
-    pkceMethod: 'S256',
+    //onLoad: 'check-sso',
+    //silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
+    onLoad: 'login-required',
+    //pkceMethod: 'S256',
   })
     .then((authenticated) => {
+      console.log(authenticated);
       if (!authenticated) {
         console.log("user is not authenticated..!");
       }

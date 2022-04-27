@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express-session": "^1.17.2",
     "keycloak-connect": "^17.0.1",
     "nodemon": "^2.0.15"

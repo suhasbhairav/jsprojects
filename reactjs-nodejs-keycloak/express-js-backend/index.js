@@ -26,9 +26,16 @@ app.get('/', function(req, res){
 
 app.listen(5000);*/
 var express = require('express');
+const session = require('express-session');
+const dotenv = require('dotenv').config();
+var cors = require('cors');
 var app = express();
 
 const keycloak = require('./keycloak-config.js').initKeycloak();
+app.use(cors());
+app.use(session({
+    secret: process.env.SESSION_SECRET
+}));
 app.use(keycloak.middleware());
 
 const testController = require('./test-controller.js');

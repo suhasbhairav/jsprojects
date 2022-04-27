@@ -1,6 +1,6 @@
 var session = require("express-session");
 var Keycloak = require("keycloak-connect")
-
+const dotenv = require('dotenv').config();
 let _keycloak;
 /*var keycloakConfig = {
     "realm": "Demo-Realm",
@@ -53,7 +53,12 @@ function initKeycloak() {
     else {
         console.log("Initializing Keycloak...");
         var memoryStore = new session.MemoryStore();
-        _keycloak = new Keycloak({ store: memoryStore }, keycloakConfig);
+        _keycloak = new Keycloak({
+            secret:process.env.SESSION_SECRET,
+            resave: false,
+            saveUninitialized: true,
+            store: memoryStore
+          }, keycloakConfig);
         return _keycloak;
     }
 }

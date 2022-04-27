@@ -28,8 +28,8 @@ const Dashboard = () => {
         datatype: "json",
       },
       headers: {
-        "X-RapidAPI-Host": "",
-        "X-RapidAPI-Key": "",
+        "X-RapidAPI-Host": "alpha-vantage.p.rapidapi.com",
+        "X-RapidAPI-Key": "768a7a35f5mshbe332da2ffe63acp19162djsn465cb64e6088",
       },
     };
 

@@ -53,3 +53,4 @@ This repository contains projects written from scratch. We look at different con
 - Full Stack School Management System with React JS, Material UI, Node JS and Mongo DB (Including Sign-In)
 - Express JS and Google Firebase authentication
 - Web 3.0
+- Docker deployment of React Apps

@@ -24,7 +24,7 @@ This repository contains projects written from scratch. We look at different con
 - React JS & Rapid API Projects (Alpha Vantage API)
 - React JS, Express JS & Keycloak Login  (https://medium.com/devops-dudes/secure-front-end-react-js-and-back-end-node-js-express-rest-api-with-keycloak-daf159f0a94e)(https://medium.com/devops-dudes/securing-node-js-express-rest-apis-with-keycloak-a4946083be51)
 - React JS, Keycloak and Social Login ( https://walkingtree.tech/detailed-guide-securing-react-applications-keycloak/ , https://github.com/suhasbhairav/react_keycloack_google_social_auth , https://reactjsexample.com/log-in-with-google-social-on-keycloack-for-react/ )
-- UI Templates - React & Bootstrap (In Progress)
+- UI Templates - React & Bootstrap
 
 
 ## Future Features

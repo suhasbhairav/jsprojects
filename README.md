@@ -25,7 +25,7 @@ This repository contains projects written from scratch. We look at different con
 - React JS, Express JS & Keycloak Login  (https://medium.com/devops-dudes/secure-front-end-react-js-and-back-end-node-js-express-rest-api-with-keycloak-daf159f0a94e)(https://medium.com/devops-dudes/securing-node-js-express-rest-apis-with-keycloak-a4946083be51)
 - React JS, Keycloak and Social Login ( https://walkingtree.tech/detailed-guide-securing-react-applications-keycloak/ , https://github.com/suhasbhairav/react_keycloack_google_social_auth , https://reactjsexample.com/log-in-with-google-social-on-keycloack-for-react/ )
 - UI Templates - React & Bootstrap
-
+- React JS and Excel : Read excel sheet in a react application using Sheet.JS
 
 ## Future Features
 - Different CSS Frameworks UI Templates - Bootstrap, Material UI, Semantic UI React
@@ -40,7 +40,6 @@ This repository contains projects written from scratch. We look at different con
 - React Native + Google Sign In
 - Next.JS Projects
 - React Frontend/CMS Backend (Strapi) Projects
-- React and Excel
 - React Redux Saga
 - React Unit Tests
 - React Integration Tests

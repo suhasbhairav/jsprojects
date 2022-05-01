@@ -53,3 +53,4 @@ This repository contains projects written from scratch. We look at different con
 - Express JS and Google Firebase authentication
 - Web 3.0
 - Docker deployment of React Apps
+- CSS3 and Flex

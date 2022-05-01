@@ -1,2 +1,3 @@
 node_modules
 /mern/memories_project/server/.env
+.env

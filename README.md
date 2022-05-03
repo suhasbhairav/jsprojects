@@ -41,7 +41,7 @@ This repository contains projects written from scratch. We look at different con
 - Next.JS Projects
 - React Frontend/CMS Backend (Strapi) Projects
 - React Redux Saga
-- React Unit Tests
+- React Unit Tests - Jest
 - React Integration Tests
 - Node.JS Unit Tests
 - Node.JS Integration Tests on Real DB (Mongo DB)

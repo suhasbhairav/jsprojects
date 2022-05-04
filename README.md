@@ -54,3 +54,4 @@ This repository contains projects written from scratch. We look at different con
 - Web 3.0
 - Docker deployment of React Apps
 - CSS3 and Flex
+- React JS and Cryptocurrency APIs

@@ -55,3 +55,4 @@ This repository contains projects written from scratch. We look at different con
 - Docker deployment of React Apps
 - CSS3 and Flex
 - React JS and Cryptocurrency APIs
+- React Data Table

@@ -1,4 +1,4 @@
-# A Comprehensive list of Projects in JavaScript, React-Redux, Node.JS, MERN Stack, Express.JS, React-Redux and more written from scratch
+# A Comprehensive list of Projects in JavaScript, React-Redux, Node.JS, MERN Stack, Express.JS, React-Redux, Redux Saga and more written from scratch
 This repository contains projects written from scratch. We look at different concepts and features in JavaScript, Node.JS, React JS, React Redux, Thunk, Axios (API Access), etc and various login frameworks.
 
 ## Features

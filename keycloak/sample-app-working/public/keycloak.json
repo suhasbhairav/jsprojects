@@ -1,8 +1,8 @@
 {
-  "realm": "Demo-Realm",
-  "auth-server-url": "http://localhost:8180/auth/",
+  "realm": "CLIMATE-FARMERS",
+  "auth-server-url": "http://localhost:8080/auth/",
   "ssl-required": "external",
-  "resource": "new-react-web-app",
+  "resource": "react-web-app",
   "public-client": true,
   "verify-token-audience": true,
   "use-resource-role-mappings": true,

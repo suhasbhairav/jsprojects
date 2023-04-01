@@ -14,6 +14,10 @@ function App() {
     }
   }, [first, message]);
   
+  useEffect(() => {
+    console.log("Loading...");
+  }, []);
+  
   function changeVal(){
     setFirst(first+1);
     setMessage(new Date().toString());
